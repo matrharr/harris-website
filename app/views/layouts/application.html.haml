@@ -1,0 +1,29 @@
+!!!
+%html
+  %head
+    %title Matt Harris
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
+    = javascript_include_tag 'application', 'data-turbolinks-track' => true
+    = csrf_meta_tags
+  %body
+    %header
+      SITE LOGO CENTERED HERE
+    %nav
+      %a.nav-button{href: root_path}
+        Home
+      %a.nav-button{href: about_path}
+        About
+      %a.nav-button{href:contact_path}
+        Contact
+      %a.nav-button{href:projects_path}
+        Projects
+      %a.nav-button{href:blog_path}
+        Blog
+      %a.nav-button#recommended-nav-button{href: recommended_path}
+        Recommended
+    = yield
+
+    %footer
+      Matt Harris
+      matrharr@gmail.com
+      (615) 406-4891

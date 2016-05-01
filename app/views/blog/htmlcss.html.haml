@@ -1,0 +1,16 @@
+%h1
+  HTML & CSS
+
+
+%h5
+  As it seems with most programming tools, it has been important to have a good understanding of the fundamentals, to the point where you can explain it in a few different ways, in order to effectively use the language in a seamless manner.
+
+  A really important aspect of writing HTML and CSS is how you group and order all of the elements. In HTML you write out all of the pieces that you want on your page. If you wanted a navigation bar for your site, you could put:
+
+  < Nav >< p > Home < /p >< p > Contact < /p >< p > Help < /p >< /Nav >
+
+  All this does is create a nav element with three p elements inside. Assume you also have a body to the website, like a blog post. So the nav bar should go horizontal above the body and let's say we have a footer that we want to go horizontally below the body. In this way, we potentially want the nav and the footer to do the same stuff. If that's the case, we could assign both the nav and the footer the same class value. Then we when are styling in CSS, when we add styling to that class, both elements will be manipulated.
+
+  There are other cases where you might only want to do something to one element. In our same scenario, perhaps we want each element of the nav bar to be a different color. In that case, we would want to use an ID rather than a class. This is not because classes and IDs work differently in CSS, they actually can be used in the same way, but it is best practice to use classes when dealing with multiple elements and IDs when dealing with one. IDs work the same way, as we would just assign one element with an ID and then style it in CSS, and only that element would be effected. Using IDs and classes in this way helps keep the code readable and I think that having clearly defined uses of these keywords helps you order and control your code.
+
+  Thanks for reading! -Matt

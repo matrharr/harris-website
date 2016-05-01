@@ -1,0 +1,17 @@
+%h1
+  Enumerable Ruby Methods
+
+
+%h5
+  Dev Bootcamp's Week 5 of Phase 0 definitely was a step up in difficulty from last week's introduction to Ruby. Last week we focused on the basics of iteration and learned a few methods. This week we wrote more complex methods that involved multiple operations, laid out more extensive pseudocode to guide the coding process, were introduced to creating classes, and researched new methods for every challenge to help when refactoring. One crucial method in Ruby is map.
+
+  Map is an iterative method that returns a new array. It is a non destructive method, meaning that it does not change the array in place, rather the method returns a new array and after map does its thing, you can still access the original array object untouched.
+  array = [2,4,6,8,10]
+
+  array.map{|i| i/2 }
+  view rawmap_example.rb hosted with ❤ by GitHub
+
+
+  In the example, I've used map to iterate an array of integers, dividing each value by 2. The result is a new array object with each of those values halved. If all you wanted was to do something to each of those values, you could have the output of map returned and printed. If you wanted to commit multiple operations beyond this one use of map, you could save the output of map on array into a variable and then access that variable elsewhere in your code. I've found a good way to remember how map works is to really consider its name and try to visualize that the method will map its way through an array, on every value writing a new path on each element.
+
+  Thanks for reading! -Matt

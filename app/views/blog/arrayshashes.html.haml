@@ -1,0 +1,21 @@
+%h1
+  Arrays and Hashes
+
+
+%h5
+  The fourth module at DBC Phase 0 covered the basics of Ruby. I had learned a lot of this stuff in my own research last year and reviewed it in preparation for the DBC interview in October. That being said, most of the core concepts were things I was already aware of, but there was some really interesting material covered this week. One important aspect to understand is the differences between arrays and hashes and why you would use one over the other in a given situation.
+
+  Arrays are ordered collections of objects and are themselves objects. Arrays can hold strings, integers, floats, symbols, arrays, hashes, and any combination of those. You can create an array in a few different ways.
+  my_array = Array.new
+  array = []
+  ordered_list = ["Hamburger", "hat", 55, :hat, .048737]
+  view rawarr.rb hosted with ❤ by GitHub
+  Once an array is created and has objects within it, you can iterate over those objects by referring to an object's index number. Arrays assign an index number to every object and orders them accordingly. The first object is given an index of 0, the second an index of 1, etc. So if you know that you want to perform a function on the third object in an array, you could point straight to that index number.
+
+  Hashes are similar to arrays in that they are also ordered lists that can hold any type of object. However, the main difference from arrays is that hashes order their contents not by an index number, but with key/value pairs.
+  hash = {:dog => "bark", :cat => "meow", :human => "I'm sad"}
+  my_hash = {0 => "hat", 1 => "hamburger", 2 => "octopus"}
+  view rawhash.rb hosted with ❤ by GitHub
+  In the example you can see that the keys and values can be defined as whatever data structure you like, even with ordered numbers which would make it very much like an array. The advantage of hashes is that if you are trying to retrieve the value of a key that you know, you do not have to sort through a bunch of ordered objects to find it. Rather, having a key value relationship can make it much easier to search through a narrower range of possibilities to do what you what to do.
+
+  Thanks for reading! -Matt
