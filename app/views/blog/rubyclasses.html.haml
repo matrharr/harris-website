@@ -1,0 +1,15 @@
+%h1
+  Classes in Ruby
+
+
+%h5
+  This week has been by far the most challenging week and I guess it makes sense that the weeks will continue to be more and more difficult as we begin to work on more complex projects. We continued creating Ruby classes, diving into more complex class construction and methods along with learning a couple of new tricks to manipulate class objects, like the attr_accessor. Overall, although the week certainly presented challenges, I feel like my skill is in a solid place and my mindset in approaching these challenges is improving a ton. It is really interesting to work on a challenge and to truly get stuck in a spot where I'm not sure what direction to go. In one sense it definitely cranks up my anxiety and self doubt, but once I can .collect! myself I've found it a tremendous learning experience to research and test possible solutions. Finding a method that may work, testing it in irb and just generally messing around with the code to see what happens has proven to be one of the most effective ways for me to learn.
+
+  We're gonna talk about classes, instance variables and some other stuff right now. Classes in Ruby provide a way to establish a hierarchy of objects. A car class could be the parent of a Honda Accord class and that same car class could be the child class of a vehicle class. Within any class you can make objects which are instances of the class. The object you create could possess qualities like name or amount, etc. Inside of your class you could have methods that perform actions on those variables of the object. All of that is pretty abstract and theoretical, but the point of classes is that they can actually mirror simple real world objects pretty easily. To help you understand, I created the following example.
+
+
+
+
+  In this example, we can create a new Carnitas object, supplying one argument, which is the quantity of carnitas you desire. If you don't enter a positive integer, an argument error is raised and the object is not created. On line 4, a crucial connection is made. The "@" symbol signifies an instance variable which is like a local variable with VIP access to anywhere in the class. I've set the instance variable to equal whatver the user input as the number of carnitas. Because of that, down in the methods I wrote, I can access the @quanitity instance variable and manipulate by adding and substracting. If you wanted a simple way of just making the quantity value something you could set and view at any time you could use attr_accessor which would enable you to do that in one line. In this case, carnitas don't just drop out of the sky so you gotta cook up your carnitas fresh if you want em!
+
+  Thanks for reading! -Matt

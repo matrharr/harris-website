@@ -1,0 +1,27 @@
+%h1
+  Big O Notation
+
+
+%h5
+  The eighth week at DBC introduced data schemas and basic SQL commands. We covered relational database concepts and practiced a handful of ways to display and calculate information from tables. It seems like there are a lot of interesting potential things that can be done with data bases and I've talked to several people in tech that all echo the same view that data science is becoming more and more important in today's tech world.
+
+  For our blog assignment this week we are supposed to research one of several possible topics related to the programming field. I've chosen to research Big O notation because I have been wondering how to distinguish and rank the efficiency of functions from one another. While working on challenges for the past two months and reviewing other students' work, it is obvious that there are many different ways to create a working function that all have the same output. But certain solutions must be better than others. There are several perspectives you could evaluate a given block of code, for example you could evaluate it on readability. If placeholders are well named and you can quickly make sense of what is happening, you could claim that this code is better than another in terms of readability. Readability is a factor when working collaboratively for sure, but the codes' runtime and memory space used seem like more important factors, especially in worst case scenarios.
+
+  Big O notation refers to calculating how long an algorithm takes to run relative to the input as the size of the input increases. So this measurement is always made in terms of what the input is and looking at the size of the input. There are a few different ways this can work out, so here are a few examples. Below is a method that runs in constant time, meaning no matter what the size of the input, the method will always take the same amount of time.
+
+
+
+
+  This method simply displays the first element of an array, so no matter the size of the array, it will always run the same. Constant time is referred to as O(1) time. The next example is a method that runs in linear time, O(n).
+
+
+
+
+  In this example, the method iterates through the array and adds 1 to each element. So the runtime here relies entirely on the size of the array. If the array is 20 elements, there will be 20 iterations, if it is 300, there will be 300. Finally, there is quadratic time, O(n^2).
+
+
+
+
+  In this last example, each element is iterated the same number of times as the size of the input. If the array contained 10 items, there would be 100 operations. The bigger the input is, the runtime increases a ton. Looking at these examples of Big O notation, I am beginning to understand what to look for when trying to determine the efficiency of an algorithm. There is definitely still a lot of dots to be connected through research and experience.
+
+  Thanks for reading! -Matt

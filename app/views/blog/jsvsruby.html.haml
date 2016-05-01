@@ -1,0 +1,16 @@
+%h1
+  Javascript vs. Ruby
+
+
+%h5
+  As we approach the last few weeks of Phase 0, this week the focus was on Javascript and we built a few programs to get started in the programming language. A lot of the instruction wanted us to focus on learning JS based off our knowledge of Ruby, comparing and contrasting syntax and logic. There are a ton of similarities between the two languages, and we even repeated some challenges we had previously done but using JS this time around. The differences between the two languages is subtle at the superficial levels we covered this week, mostly just syntactic changes. A practice extremely common in programming, iterative loops, is something I did a lot of this week in JS throughout the challenges, so I'll compare the loop syntax of JS with that of Ruby.
+
+  In Ruby, there are loads of iterative methods built into the language. To name a few, .each, .map, .inject, .each_with_index, .select, and many more all iterate through data, take a parameter, and then run a block that can do something special with that parameter. Check out the following example.
+
+  This example shows a simple way to run a loop in Ruby. There is an array of elements on line one, on line 2 I call .each to iterate over the array, followed by keyword do to signal the content of my iteration, then inbetween pipes is the parameter which you can name basically anything you want. On line 3 I just tell the program to print the element to the screen and then I end the loop on line 4. The .each method runs this code with each element in the array, so the end result is that it prints each element to the screen.
+
+  Javascript loops tend to be a bit more complicated because you have to write out some of the hidden parts that make the .each method work in Ruby. But the complication is not arbitrary, in fact it makes total sense, and part of me actually likes it better than just whipping out a fancy Ruby method.
+
+  In this example, we have basically the same program as before, but this time it is running in Javascript. On the first line, I declare an array of numbers with some slightly different syntax. On line 2, I run a for loop, to be honest, I'm not sure why it is called a for loop, but it loops. How does it loop? The code inside the parentheses is what specifies how long it runs the argument on line 3. So inside the parentheses, a variable called i is declared and given a value of zero, after the semi colon is essentially a while statement, meaning while the value of the variable called i is less than the length of the array variable, the argument on line 3 will keep running. The final piece of the puzzle is the i++, which increments the i variable by 1 each time the for statement loops. So this ends up doing the same thing as the Ruby .each method did in the previous example, but with more stuff on the page.
+
+  Thanks for reading! -Matt
